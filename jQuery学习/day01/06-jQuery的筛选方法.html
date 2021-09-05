@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <style>
+        .father{
+            width: 200px;
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">
+            <p>段落</p>
+        </div>
+        <p>我是一个句号</p>
+
+    </div>
+
+    
+    <script>
+        $(function(){
+            //parent  返回最近的父级
+            //parents 返回所有的父级
+            console.log($('.son').parents());
+            $('.son').parent().css('background','pink');
+            //颜色可以选择16进制的
+            //children()  选择自己亲儿子
+            // $('.father').children().css('color','#fff');
+            $('.father').find('p').css('color','yellow');
+
+        })
+    </script>
+
+</body>
+</html>

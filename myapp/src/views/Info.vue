@@ -17,32 +17,28 @@
 </template>
 
 <script>
- import http from '../util/http'
- export default {
-    data() {
-      return {
-        infoList: []
-      }
-    },
-    mounted() {
-      http({
-        url:`/gateway/?cinemaId=${this.$route.params.cinemaId}&k=9254224`,
-        headers:{
-          'X-Host': 'mall.film-ticket.cinema.info'
-        }
-      }).then(res=>{
-        console.log(res.data.data)
-        this.infoList=res.data.data
-
-      })
+import http from '../util/http'
+export default {
+  data () {
+    return {
+      infoList: []
     }
-
-
+  },
+  mounted () {
+    http({
+      url: `/gateway/?cinemaId=${this.$route.params.cinemaId}&k=9254224`,
+      headers: {
+        'X-Host': 'mall.film-ticket.cinema.info'
+      }
+    }).then(res => {
+      console.log(res.data.data)
+      this.infoList = res.data.data
+    })
   }
+
+}
 </script>
 
 <style>
-
-
 
 </style>

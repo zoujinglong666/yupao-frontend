@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<p>点击按钮获取数组中年龄大于18的第一个元素</p>
+		<p id="demo"></p>
+		<button type="button" onclick="myFunction()">点我</button>
+	</body>
+	<script type="text/javascript">
+		var ages = [1, 3, 18, 22];
+
+		function checkAdult(age) {
+			return age >= 18;
+		}
+
+		function myFunction() {
+			document.getElementById("demo").innerHTML = ages.find(checkAdult);
+		}
+	</script>
+</html>

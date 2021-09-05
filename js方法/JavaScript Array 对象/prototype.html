@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>允许你向数组对象添加属性或方法。</title>
+	</head>
+	<body>
+		
+		<p id="demo">点击按钮创建数组,并调用新建的ucase()方法，最后显示结果</p>
+		<button type="button" onclick="myFunction()">点我</button>
+		<script type="text/javascript">
+			Array.prototype.myUcase=function(){
+					
+				for(i=0;i<this.length;i++){
+					
+					this[i]=this[i].toUpperCase();
+					<!-- toUpperCase:小写字母装换成大写字母 -->
+				}
+			}
+			function myFunction(){
+				var fruits=["a","b","c"];
+				fruits.myUcase();
+				var x=document.getElementById("demo");
+				x.innerHTML=fruits;
+			}
+		</script>
+	</body>
+</html>

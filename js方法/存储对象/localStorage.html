@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="demo"></div>
+		<p>使用 localStorage 创建一个本地存储的 name/value 对，name="lastname" value="Smith", 然后检索 "lastname" 的值，并插入到 id="result" 的元素上</p>
+	</body>
+	<script type="text/javascript">
+		if(typeof(Storage)!=='undefined'){
+			localStorage.setItem("lastName","Smith");
+			document.getElementById("demo").innerHTML=localStorage.getItem('lastName')
+		}else{
+			document.getElementById("demo").innerHTML="Sorry, your browser does not support Web Storage...";
+		}
+	</script>
+</html>

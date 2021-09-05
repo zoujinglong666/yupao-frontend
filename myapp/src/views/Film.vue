@@ -21,7 +21,7 @@ export default {
 
   data () {
     return {
-      // imgList:["https://pic.maizuo.com/usr/movie/5be64dca3fac27effc5a8bb663764f28.jpg",""]
+      imgList:["https://pic.maizuo.com/usr/movie/5be64dca3fac27effc5a8bb663764f28.jpg",""]
     }
   },
   components:

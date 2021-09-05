@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<p id="demo"></p>
+		<p>findIndex() 方法返回传入一个测试条件（函数）符合条件的数组第一个元素位置
+		I11以下的浏览器不支持此方法
+		</p>
+		<button type="button" onclick="myFunction()">点我</button>
+	</body>
+	<script type="text/javascript">
+		var ages=[12,18,19,18];
+		function checkAdult(age) {
+			return age >= 18;
+		}
+		function myFunction(){
+			document.getElementById("demo").innerHTML=ages.findIndex(checkAdult);
+			// 返回第一个数组的索引值
+		}
+	</script>
+</html>

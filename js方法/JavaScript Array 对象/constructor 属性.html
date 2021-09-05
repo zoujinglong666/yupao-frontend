@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>返回创建数组对象的原型函数。</title>
+	</head>
+	<body>
+		<!-- 在原生js中方法记得加小括号 -->
+
+		<p id="demo">点击按钮创建一个数组，并显示它的构造函数</p>
+		<button onclick="myFunction()">点我</button>
+
+		<script type="text/javascript">
+			function myFunction() {
+				var fruits = ["Banana", "Apple", "Orange"];
+				var x = document.getElementById("demo");
+				x.innerHTML = fruits.constructor;
+			}
+		</script>
+	</body>
+
+</html>
+
+ 

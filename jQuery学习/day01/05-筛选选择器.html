@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>首页</li>
+        <li>新闻</li>
+        <li>咨询</li>
+        <li>信息</li>
+        <li>微信</li>
+        <li>QQ</li>
+        <li>飞信</li>
+    </ul>
+    <script>
+        $(function(){
+            // $('ul li:first').css('background','pink');
+            // $('ul li:last').css('background','blue');
+            // $('ul li:eq(2)').css('background','yellow');
+            //因为索引号从0开始  odd显示偶数
+            $('ul li:odd').css('background','yellow');
+            //even显示奇数
+            $('ul li:even').css('background','pink');
+
+        })
+    </script>
+</body>
+</html>

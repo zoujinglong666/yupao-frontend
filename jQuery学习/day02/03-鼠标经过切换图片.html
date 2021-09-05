@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .box{
+            position: relative;
+            width: 604px;
+            height: 340px;
+            margin: 100px auto;
+            overflow: hidden;
+           
+        }
+        .small{
+            position: absolute;
+            display: block;
+            top: 298px;
+            left: 0;
+            width: 604px;
+            height: 42px;
+            background-color:#333;
+        }
+        .small ul li{
+            display: flex;
+            float: left;
+        }
+        .small ul li a{
+            width: 120.8px;
+            height: 42px;
+            justify-content: space-around;
+            align-items: center;
+           text-align: center;
+            color: #fff;
+            font-size: 16px;
+            line-height: 42px;
+            
+        }
+
+        .small ul li:hover{
+            background-color:#999;
+        }
+        .small ul li a:hover{
+            color: yellow;
+        }
+    </style>
+</head>
+<script src="../js/jquery-3.5.1.min.js"></script>
+<body>
+    <div class="box">
+        <div class="box1">
+            <a href=""><img src="images/1.jpeg" alt=""></a>
+        </div>
+        <div class="box1">
+            <a href=""><img src="images/2.jpeg" alt=""></a>
+        </div>
+        <div class="box1">
+            <a href=""><img src="images/3.jpeg" alt=""></a>
+        </div>
+        <div class="box1">
+            <a href=""><img src="images/4.jpeg" alt=""></a>
+        </div>
+        <div class="box1">
+            <a href=""><img src="images/5.jpeg" alt=""></a>
+        </div>
+        <div class="small">
+            <ul>
+                <li>
+                    <a href="">七夕王昭君</a>
+                </li>
+                <li>
+                    <a href="">设计大赛作品</a>
+                </li>
+                <li>
+                    <a href="">全国大赛活动</a>
+                </li>
+                <li>
+                    <a href="">大神教你玩</a>
+                </li>
+                <li>
+                    <a href="">王者别闹</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <script>
+        $(function(){
+            $('.small ul').mouseover(function(){
+                var index=$(this).index();
+                console.log(index);
+                $('.box1').eq(index).show().siblings().hide()
+               
+            })
+        })
+    </script>
+</body>
+</html>

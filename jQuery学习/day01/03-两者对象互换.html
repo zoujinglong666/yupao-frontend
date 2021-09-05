@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <video src="video/mov_bbb.mp4"></video>
+    <script>
+
+        var myvideo=document.querySelector('video');
+        $('video')[0].play();
+
+        // $(myvideo);//把dom对象转换成jquery对象  不需要加引号
+        // $(myvideo)[0].play();
+    </script>
+    <!-- 谷歌浏览器不会自动给播放视频 -->
+</body>
+</html>

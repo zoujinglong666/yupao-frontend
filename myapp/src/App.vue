@@ -1,14 +1,10 @@
 <template>
   <div id="app">
-    <tabbar>
-
-    </tabbar>
+    <tabbar> </tabbar>
     <section>
       <router-view />
       <!-- 路由容器，实际也是一个插槽 -->
-
     </section>
-
   </div>
 </template>
 
@@ -16,20 +12,15 @@
 import tabbar from './components/Tabbar'
 export default {
   data () {
-    return {
-
-    }
+    return {}
   },
   components: {
     tabbar
   }
-
 }
 </script>
 <style lang="scss" scoped>
-
-  section{
-    margin-bottom: 50px;
-  }
-
+section {
+  margin-bottom: 50px;
+}
 </style>

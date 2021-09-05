@@ -21,42 +21,41 @@
     </div>
     </div>
 
-
   </div>
 </template>
 
 <script>
-  import http from '../util/http'
-  export default {
-    data() {
-      return {
-        imgList: [],
-        discountList: null,
-        value:''
-      }
-    },
-   
-    mounted() {
-      http({
-          url: '/gateway?type=2&cityId=310100&k=644053',
-          headers: {
-            'X-Host': 'mall.cfg.common-banner'
-          }
-        }).then(res => {
-          this.imgList = res.data.data
-        }),
-
-        http({
-          url: '/gateway?activeCode=LvEzsTL40p&k=8961572',
-          headers: {
-            'X-Host': 'mall.brand-act.info'
-          }
-        }).then(res => {
-          console.log(res.data)
-          this.discountList = res.data
-        })
+import http from '../util/http'
+export default {
+  data () {
+    return {
+      imgList: [],
+      discountList: null,
+      value: ''
     }
+  },
+
+  mounted () {
+    http({
+      url: '/gateway?type=2&cityId=310100&k=644053',
+      headers: {
+        'X-Host': 'mall.cfg.common-banner'
+      }
+    }).then(res => {
+      this.imgList = res.data.data
+    }),
+
+    http({
+      url: '/gateway?activeCode=LvEzsTL40p&k=8961572',
+      headers: {
+        'X-Host': 'mall.brand-act.info'
+      }
+    }).then(res => {
+      console.log(res.data)
+      this.discountList = res.data
+    })
   }
+}
 
 </script>
 
@@ -83,7 +82,5 @@
     font-size: 32px;
     font-weight: 500;
   }
-
-
 
 </style>

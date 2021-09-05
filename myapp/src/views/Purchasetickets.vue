@@ -13,7 +13,7 @@
             <!-- 地址信息 -->
             <div class="address">
               <van-icon name="location-o" /><span class="van-ellipsis">{{item.address}}</span>
-              <van-icon name="phone-o" @click="handleTel(item.phone)"/>
+              <van-icon name="phone-o" @click="handleTel(item)"/>
             </div>
       </li>
     </ul>
@@ -34,7 +34,7 @@
     </van-popup>
 
     <!-- 轮播组件 -->
-    
+
       <tickets-swiper>
 
       </tickets-swiper>
@@ -43,49 +43,48 @@
 </template>
 
 <script>
-  import ticketsSwiper from './Purchasetickets/TicketsSwiper'
-  import Swiper from 'swiper/bundle'
-  import SwiperCore, { Navigation, Pagination } from 'swiper/core'
-  import 'swiper/swiper.scss'
-  import http from '../util/http'
-  export default {
-    data() {
-      return {
-        ticketsList: null,
-        isShow:true,
-        show:false
+import ticketsSwiper from './Purchasetickets/TicketsSwiper'
+import Swiper from 'swiper/bundle'
+import SwiperCore, { Navigation, Pagination } from 'swiper/core'
+import 'swiper/swiper.scss'
+import http from '../util/http'
+export default {
+  data () {
+    return {
+      ticketsList: null,
+      isShow: true,
+      show: false
 
-      }
-    },
-    components:{
-      ticketsSwiper
-
-    },
-    mounted() {
-
-      http({
-        url: `/gateway/?cinemaId=${this.$route.params.cinemaId}&k=4049246`,
-        headers: {
-          'X-Host': 'mall.film-ticket.cinema.info'
-        }
-      }).then(res => {
-        console.log(res.data.data)
-        console.log('利用获取的id,ajax请求后端接口', this.$route.params.cinemaId)
-        this.ticketsList = res.data.data
-      })
-    },
-    methods:{
-      handleTel(phone){
-        console.log(phone)
-        window.location.href='tel://phone'
-      },
-      handleInfo(){
-        // this.$router.push('/Info')
-        this.show=true
-      }
     }
+  },
+  components: {
+    ticketsSwiper
 
+  },
+  mounted () {
+    http({
+      url: `/gateway/?cinemaId=${this.$route.params.cinemaId}&k=4049246`,
+      headers: {
+        'X-Host': 'mall.film-ticket.cinema.info'
+      }
+    }).then(res => {
+      console.log(res.data.data)
+      console.log('利用获取的id,ajax请求后端接口', this.$route.params.cinemaId)
+      this.ticketsList = res.data.data
+    })
+  },
+  methods: {
+    handleTel (item) {
+      console.log(item.telephones[0])
+      window.location.href = 'tel://item.telephones[0]'
+    },
+    handleInfo () {
+      // this.$router.push('/Info')
+      this.show = true
+    }
   }
+
+}
 </script>
 
 <style lang="scss" scoped>
@@ -132,9 +131,5 @@
     font-size: 10px;
     padding-left: 70px;
   }
-
-  
-
-
 
 </style>

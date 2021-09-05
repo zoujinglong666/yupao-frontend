@@ -10,9 +10,7 @@
 </template>
 <!-- 演职人员和剧照的轮播图公用组件 -->
 <script>
-import Vue from 'vue'
 import Swiper from 'swiper/bundle'
-import SwiperCore, { Navigation, Pagination } from 'swiper/core'
 import 'swiper/swiper.scss'
 export default {
 

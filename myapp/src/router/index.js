@@ -40,9 +40,9 @@ const routes = [{
   component: Center
 },
 {
-  path:'/discount',
-  component:Discount
-  
+  path: '/discount',
+  component: Discount
+
 },
 {
   path: '/info/:cinemaId',
@@ -54,7 +54,7 @@ const routes = [{
   component: Search
 },
 {
-  path: '/purchasetickets/:cinemaId',//动态路由
+  path: '/purchasetickets/:cinemaId', // 动态路由
   component: Purchasetickets
 },
 {

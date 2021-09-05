@@ -6,7 +6,7 @@
     placeholder="请输入搜索关键词"
     @cancel="onCancel"
     />
-    <van-empty image="search" description="没事搜一搜" v-show="isShow" />
+      <van-empty image="search" description="你好" v-if="isShow"/>
 
     <van-list v-for="(item,index) in (computedCinemaList)" :key="index">
       <van-cell>
@@ -18,47 +18,42 @@
 </template>
 
 <script>
-  import { Toast } from 'vant';
+import { Toast } from 'vant'
 
-  export default {
-    data() {
-      return {
-        value: '',
-        isShow:false
-      }
-    },
-    computed:{
-      computedCinemaList(){
-        if(this.value===''){
-          return []
-        }
-        return this.$store.state.cinemaList.filter(item=>item.name.toUpperCase().includes(this.value.toUpperCase())||item.address.toUpperCase().includes(this.value.toUpperCase()))
-
+export default {
+  data () {
+    return {
+      value: '',
+      isShow: false
+    }
+  },
+  computed: {
+    computedCinemaList () {
+      if (this.value === '') {
+        return []
       }
 
-    },
-    mounted () {
-      if(this.$store.state.cinemaList.length===0){
-        //就走vueX异步请求流程
-        this.$store.dispatch('getCinemaList',this.$store.state.cityId)
-      }else{
-        console.log("缓存")
-      }
-    },
-    methods:{
-       onCancel() {
-         this.$router.back()
-         //返回上一级页面
-
-          }
-          
-
+      return this.$store.state.cinemaList.filter(item => item.name.toUpperCase().includes(this.value.toUpperCase()) || item.address.toUpperCase().includes(this.value.toUpperCase()))
     }
 
-
-
+  },
+  mounted () {
+    if (this.$store.state.cinemaList.length === 0) {
+      // 就走vueX异步请求流程
+      this.$store.dispatch('getCinemaList', this.$store.state.cityId)
+    } else {
+      console.log('缓存')
+    }
+  },
+  methods: {
+    onCancel () {
+      this.$router.back()
+      // 返回上一级页面
     }
 
+  }
+
+}
 
 </script>
 <style lang="scss" scoped>

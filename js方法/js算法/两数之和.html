@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		var twoSum = function(nums, target) {
+		    //遍历数组每个元素
+		    for(let i = 0;i < nums.length; i++){
+		        //判断数组中存在需要满足和为target的另一个元素，如果存在，返回下标
+		        let anothernum=target - nums[i];
+		        let targetIndex = nums.indexOf(target - nums[i]);
+		         if(targetIndex!=-1){
+		             //找到符合条件的元素下标
+		             if(targetIndex===i){
+		                //num[i]的值正好是target的1/2
+		                for(let j = i+1;j < nums.length; j++){
+		                    if(nums[j]==target/2){
+		                    return[i,j]
+		                    }
+		                }
+		             }else{
+		                return [i,targetIndex]
+		             }
+		            }
+		    }
+		};
+
+		twoSum(2,1,3)
+	</script>
+</html>

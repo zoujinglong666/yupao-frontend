@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<p>定义和用法
+			filter() 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。
+
+			注意： filter() 不会对空数组进行检测。
+
+			注意： filter() 不会改变原始数组</p>
+		<p>点击获取年龄大于等于的18</p>
+		<p id="demo"></p>
+		<button type="button" onclick="myFunction()">点我</button>
+	</body>
+	<script type="text/javascript">
+		var ages = [34, 23, 123, 12, 13, 19];
+
+		function checkAdult(age) {
+			return age >= 18
+		}
+
+		function myFunction() {
+			document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+		}
+	</script>
+</html>

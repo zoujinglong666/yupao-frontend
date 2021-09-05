@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<script src="../js/jquery-3.5.1.min.js"></script>
+
+<body>
+    <div class="box">
+
+    </div>
+    <script>
+        $(function () {
+            $('.box').css('width');
+            // $('.box').css('width','300px');
+            $('.box').css({
+                width: 400,
+                height: 400,
+                background: 'red'
+                //如果是复合属性则必须采用驼峰命名法，如果值不是数字，就要加引号
+            })
+            console.log($('.box').css('width')); //200px  
+        })
+    </script>
+</body>
+
+</html>
