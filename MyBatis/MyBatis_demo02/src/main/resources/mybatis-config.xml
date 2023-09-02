@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--    mybatis核心配置文件中标签有一定的顺序不能随便乱写-->
+
+
+    <!--数据库资源路径-->
+    <properties resource="jdbc.properties">
+
+    </properties>
+    <!--设置类型别名,不区分大小写
+    resultType="com.zou.mybatis.pojo.User"    resultType="User"  -->
+    <typeAliases>
+        <!--        <typeAlias type="com.zou.mybatis.pojo.User">-->
+
+        <!--        </typeAlias>-->
+
+        <!--        默认不写就是类名-->
+        <!--        <typeAlias type="com.zou.mybatis.pojo.User" alias="User">-->
+
+        <!--        </typeAlias>-->
+        <!--以包为单位，将报下所有的类型设置默认类型别名，即为类名切不区分大小写  推荐****-->
+        <package name="com.zou.mybatis.pojo"/>
+    </typeAliases>
+
+    <environments default="development">
+        <!--        配置链接数据库的环境  可以配置多个-->
+        <environment id="development">
+            <!--事务管理器  JDBC-->
+            <transactionManager type="JDBC"/>
+            <!--数据源-->
+            <dataSource type="POOLED">
+
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--引入映射文件-->
+    <mappers>
+        <!--        <mapper resource="mappers/UserMapper.xml"/>-->
+        <package name="com.zou.mybatis.mapper"/>
+    </mappers>
+</configuration>

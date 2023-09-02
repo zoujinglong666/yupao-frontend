@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zou.mybatis.mapper.SelectMapper">
+<!--MyBatis的各种查询功能：
+1.若查询出的数据只有一条，可以通过实体类对象或者List,也可以使用map集合来接收 map：{password=123456, sex=?, id=10, age=23, email=123456@qq.com, username=admin}
+2.若查询的数据有多条，一定不能通过实体类对象接收，会抛出异常，可以通过List来接收-->
+   <!-- /*
+    * 根据id查询*/-->
+    <select id="getUserById" resultType="User">
+        select * from t_user where id=#{id}
+    </select>
+
+    <!--查询所用用户信息-->
+    <!--查询多条用户信息可以使用List集合和Map集合来接受-->
+    <select id="getAllUser" resultType="User">
+        select * from t_user
+    </select>
+
+<!--这里获取的是总数,sql语句一定要写对，这里的resultType不区分大小写,-->
+<!--    int,Int,Integer,integer都可以-->
+    <select id="getCount" resultType="java.lang.Integer">
+        select count(*) from t_user
+    </select>
+
+<!--    //根据id查询用户信息为一个map集合-->
+
+<!--    Map<String, Object> getUserByIdToMap(@Param("id") Integer id);-->
+<!--resultMap要和方法的返回类型一一对应-->
+<!--    map是无序的-->
+    <select id="getUserByIdToMap" resultType="map">
+          select * from t_user where id=#{id}
+    </select>
+
+
+<!--    //查询用户所有信息,不能使用map  但是可以使用List转换，
+可以通过map类型的list集合来接受
+    Map<String, Object> getAllUserToMap();-->
+
+    <select id="getAllUserToMap" resultType="map">
+        select * from t_user
+    </select>
+
+
+
+</mapper>

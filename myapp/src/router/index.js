@@ -88,19 +88,19 @@ const router = new VueRouter({
   routes
 })
 // 全局守卫
-// router.beforeEach((to, from, next) => {
-//   let auth = ['/center']
+router.beforeEach((to, from, next) => {
+  let auth = ['/center']
 
-//   if (auth.includes(to.fullPath)) {
-//     // console.log('验证token')
-//     if (!localStorage.getItem('token')) {
-//       next('/login')
-//     }else{
-//       next()
-//     }
-//   } else {
-//     next()
-//   }
-// })
+  if (auth.includes(to.fullPath)) {
+    // console.log('验证token')
+    if (!localStorage.getItem('token')) {
+      next('/login')
+    }else{
+      next()
+    }
+  } else {
+    next()
+  }
+})
 
 export default router

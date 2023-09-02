@@ -1,7 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="385c23f0-e953-4011-b337-74152939cf10" name="默认更改列表" comment="" />
+    <list default="true" id="385c23f0-e953-4011-b337-74152939cf10" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/MyBatis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/libraries/Maven__org_mybatis_mybatis_3_5_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo01/MyBatis_demo01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo01/src/main/java/com/zou/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo01/src/main/java/com/zou/mybatis/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo01/src/main/resources/com/zou/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo01/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo01/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo01/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo01/src/test/java/com/zou/mybatis/text/MyBatisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo02/MyBatis_demo02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo02/src/main/java/com/zou/mybatis/mapper/ParameterMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo02/src/main/java/com/zou/mybatis/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo02/src/main/resources/com/zou/mybatis/mapper/ParameterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo02/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo02/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo02/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MyBatis/MyBatis_demo02/src/test/java/com/zou/mybatis/test/ParameterMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myabtis/Myabtis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myabtis/mybatis-01/mybatis-01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myabtis/mybatis-01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Myabtis/mybatis-01/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm/hrm-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm/hrm-server/src/main/java/com/zou/server/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrm/hrm-server/src/test/java/com/zou/server/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/platform/react-web" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todo-app" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toutiao-publish-admin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/umi-myapp/.idea/umi-myapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/umi-myapp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/umi-myapp/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/umi-myapp/src/config/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/umi-myapp/src/pages/index.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/umi-myapp/src/pages/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack/modules/hello.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/图标/关闭.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/图标/我的.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/图标/阅读.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/尚硅谷ES6/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微人事" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/设计稿/login-head.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/设计稿/myinfo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/设计稿/实名认证1.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/设计稿/我的-未登录.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/设计稿/登录.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/设计稿/首页 - 副本.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/面试题" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baidu_fanyi/src/md5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baidu_fanyi/vue.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jQuery学习/day01/01-基本语法.html" beforeDir="false" afterPath="$PROJECT_DIR$/jQuery学习/day01/01-基本语法.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/src/views/Cinema.vue" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/views/Cinema.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/src/views/City.vue" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/views/City.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/src/views/Detail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/views/Detail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/src/views/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/src/views/Search.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/.browserslistrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/src/router/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/src/shims-vue.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/src/store/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naive-demo/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naiveui-project/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naiveui-project/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naiveui-project/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naiveui-project/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naiveui-project/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naiveui-project/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naiveui-project/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naiveui-project/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/naiveui-project/vite.config.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +111,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1rmn8boLgP8KSeoafdwuZAteOWq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,6 +125,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="F:/IDM/elunez-eladmin-web-master/eladmin-web" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,6 +143,7 @@
       <workItem from="1620102927569" duration="17000" />
       <workItem from="1620182449173" duration="1224000" />
       <workItem from="1622264095333" duration="481000" />
+      <workItem from="1647696681211" duration="28000" />
     </task>
     <servers />
   </component>

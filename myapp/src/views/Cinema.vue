@@ -120,17 +120,8 @@ li {
   overflow-y: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  // white-space: nowrap;
 }
-// .cinema-ceiling{
-//   position: fixed;
-//   left: 0;
-//   right: 0;
-//   top: 0;
-//   bottom: 0;
-//   height: 50px;
 
-// }
 .cinema {
   position: fixed;
   left: 0;

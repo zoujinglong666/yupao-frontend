@@ -2,21 +2,11 @@
   <div>
     <van-index-bar>
       <van-search v-model="keyword" show-action placeholder="请输入搜索关键词" @cancel="onCancel" class="fixed" />
-
-      <div class="positioncity">
-        <p>GPS定位你所在得城市</p>
-        <div v-if="city">
-          {{city}}
-        </div>
-        <div v-else class="locate-failure">
-          定位失败
-        </div>
-      </div>
       <p>热门城市</p>
       <div v-for="item in hotcityList" :key="item.name" class="hotCity-layout">
-        <div v-if="item.isHot === 1" @click="handleChangePage(item.name, item.cityId)" class="hotCity">
+        <span @click="handleChangePage(item.name, item.cityId)" class="hotCity">
           {{ item.name }}
-        </div>
+        </span>
       </div>
       <div v-for="item in cityList" :key="item.type">
         <van-index-anchor :index="item.type" style="background-color: #f7f8fa" />
@@ -60,7 +50,8 @@ export default {
       }
     }).then((res) => {
       // console.log(res.data.data.cities)
-      this.hotcityList = res.data.data.cities
+      this.hotcityList = res.data.data.cities.filter(item=>item.isHot===1);
+      console.log(this.hotcityList)
       this.cityList = this.handleCityData(res.data.data.cities)
       // this.hotcityList = this.handlehotCityData(res.data.data.cities)
     })
@@ -82,8 +73,8 @@ export default {
         // console.log(String.fromCharCode(code))
         letterArr.push(String.fromCharCode(code))
       }
-      // console.log(letterArr)
-      letterArr.forEach((letter) => {
+      console.log(letterArr)
+      letterArr.forEach(letter => {
         const list = cities.filter(
           (item) => item.pinyin.substring(0, 1).toUpperCase() === letter
         )
@@ -113,6 +104,8 @@ export default {
 <style lang="scss" scoped="scoped">
   .hotCity-layout {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .hotCity {

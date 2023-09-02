@@ -31,7 +31,7 @@
         v-for="(item, index) in filminfo.actors"
         :key="index"
       >
-        <img :src="item.avatarAddress" alt="" />
+        <img :src="item.avatarAddress" alt=""/>
         <div style="text-align: center">
           <p class="name">{{ item.name }}</p>
           <p class="van-ellipsis">{{ item.role }}</p>

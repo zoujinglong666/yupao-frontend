@@ -1,4 +1,4 @@
-<template>
+L<template>
     <div>
     <van-search
     v-model="value"
@@ -6,8 +6,6 @@
     placeholder="请输入搜索关键词"
     @cancel="onCancel"
     />
-      <van-empty image="search" description="你好" v-if="isShow"/>
-
     <van-list v-for="(item,index) in (computedCinemaList)" :key="index">
       <van-cell>
         <div style="font-size: 16px;">{{item.name}}</div>
@@ -33,12 +31,14 @@ export default {
         return []
       }
 
-      return this.$store.state.cinemaList.filter(item => item.name.toUpperCase().includes(this.value.toUpperCase()) || item.address.toUpperCase().includes(this.value.toUpperCase()))
+      return this.$store.state.cinemaList.filter(item => 
+      item.name.toUpperCase().includes(this.value.toUpperCase())
+       || item.address.toUpperCase().includes(this.value.toUpperCase()))
     }
 
   },
   mounted () {
-    if (this.$store.state.cinemaList.length === 0) {
+    if (!this.$store.state.cinemaList.length) {
       // 就走vueX异步请求流程
       this.$store.dispatch('getCinemaList', this.$store.state.cityId)
     } else {

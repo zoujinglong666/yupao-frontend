@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zou.mybatis.mapper.ParameterMapper">
+
+    <insert id="insertUser">
+    insert into t_user values(null,'邹京龙','123456',23,'男','123456@qq.com')
+</insert>
+
+    <!--    /*-->
+    <!--    * 修改用户信息*/-->
+    <!--    void updateUser();-->
+
+    <update id="updateUser">
+        update t_user set username='admin'where id =5
+    </update>
+
+    <!-- /*删除用户信息*/
+
+     void deleteUser();-->
+
+    <delete id="deleteUser">
+        delete from t_user where id = 5
+    </delete>
+    <!--
+    resultMap
+    结果映射
+    resuleType
+    结果类型
+
+    查询功能的标签必须设置resultType或者resultMap
+    resultType：设置默认的映射关系
+    resultMap：设置自定义的映射
+
+    -->
+    <select id="getUserById" resultType="com.zou.mybatis.pojo.User">
+        select * from t_user where id=3
+    </select>
+
+    <!--    //	查询所用用户信息
+
+        List<User> getAllUser();-->
+    <select id="getAllUser" resultType="com.zou.mybatis.pojo.User">
+        select * from t_user
+    </select>
+
+
+</mapper>
